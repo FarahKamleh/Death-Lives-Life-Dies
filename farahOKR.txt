@@ -1,0 +1,5 @@
+Schedule and Deliverable for Farah Kamleh:
+	- create the floating special item -- Tuesday, March 12th by 11 AM (2 hours)
+	- when player collides with special item, have it disappear and appear in placeholder -- Tuesday, March 12th 1 PM (2 hours)
+	- when player presses the L2 button, gravestones rise from the ground and enclose Player #2 -- Tuesday, March 12th by 10 PM (2 hours)
+	- When collision occurs five times (with sound), walls drop -- Wednesday, March 13th by 12 AM (2 hours)
