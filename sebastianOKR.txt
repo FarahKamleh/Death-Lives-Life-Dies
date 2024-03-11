@@ -1,0 +1,5 @@
+Schedule and deliverable:
+    Create newborn model/Find newborn model (.5 hours, before end of Monday, 11:59 PM) 
+    Change newborn based on how much health it has (.5 hours, before end of Monday, 11:59 PM)
+    Add UI to indicate how much health newborn has (.5 hours, before end of Monday, 11:59 PM)
+    Change health of newborn after being hit by scythe (.5 hours, before end of Tuesday, 11:59 PM)
