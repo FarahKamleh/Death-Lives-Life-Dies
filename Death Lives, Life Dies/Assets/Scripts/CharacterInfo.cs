@@ -7,6 +7,7 @@ public class CharacterInfo : MonoBehaviour
 
     public int health;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,7 @@ public class CharacterInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
 }
