@@ -1,0 +1,5 @@
+Schedule and deliverable:
+	Find death and scythe models  --  Sunday by 9pm (estimate: .5 hours)
+	Import death and scythe models and attach to appropriate objects  --  Sunday by 11:59pm (estimate: .75 hours)
+	Implement framework for health bars  --  Monday by 11:59pm (estimate: 1.5 hours)
+	Implement scythe collisions and cooldown  --  Monday by 11:59pm (estimate 1.5 hours)
