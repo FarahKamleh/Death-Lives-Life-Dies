@@ -35,6 +35,7 @@ public class NewbornController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        health = sphere.GetComponent<CharacterInfo>().health;
         pointLight.color = Color.Lerp(darkColor, brightColor, health / 5.0f);
         sphereRenderer.material.Lerp(darkMaterial, brightMaterial, health / 5.0f);
     }

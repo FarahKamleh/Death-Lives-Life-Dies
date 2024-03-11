@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95ac420ce1ec6f944b3ff0f9f814b93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterToWatch: {fileID: 0}
+  characterToWatch: {fileID: 1488384791}
   barVal: 4
 --- !u!1 &247845344
 GameObject:
@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95ac420ce1ec6f944b3ff0f9f814b93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterToWatch: {fileID: 0}
+  characterToWatch: {fileID: 1488384791}
   barVal: 5
 --- !u!1 &570890592
 GameObject:
@@ -867,8 +867,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95ac420ce1ec6f944b3ff0f9f814b93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterToWatch: {fileID: 0}
+  characterToWatch: {fileID: 1488384791}
   barVal: 0
+--- !u!1001 &790335302
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5466121678552427823, guid: 8a9a4755156944247a37ea86a01118fc,
+        type: 3}
+      propertyPath: m_Name
+      value: Newborn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466121678552427821, guid: 8a9a4755156944247a37ea86a01118fc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.618
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466121678552427821, guid: 8a9a4755156944247a37ea86a01118fc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466121678552427821, guid: 8a9a4755156944247a37ea86a01118fc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.285
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466121678552427821, guid: 8a9a4755156944247a37ea86a01118fc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466121678552427821, guid: 8a9a4755156944247a37ea86a01118fc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466121678552427821, guid: 8a9a4755156944247a37ea86a01118fc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466121678552427821, guid: 8a9a4755156944247a37ea86a01118fc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466121678552427821, guid: 8a9a4755156944247a37ea86a01118fc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466121678552427821, guid: 8a9a4755156944247a37ea86a01118fc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466121678552427821, guid: 8a9a4755156944247a37ea86a01118fc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466121678552427821, guid: 8a9a4755156944247a37ea86a01118fc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466121677733718462, guid: 8a9a4755156944247a37ea86a01118fc,
+        type: 3}
+      propertyPath: m_TagString
+      value: ScytheTarget
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a9a4755156944247a37ea86a01118fc, type: 3}
 --- !u!1 &831649353
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,7 +1036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95ac420ce1ec6f944b3ff0f9f814b93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterToWatch: {fileID: 0}
+  characterToWatch: {fileID: 1488384791}
   barVal: 1
 --- !u!1 &839355259
 GameObject:
@@ -1181,7 +1255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1357,8 +1431,27 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1488384791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5466121677733718462, guid: 8a9a4755156944247a37ea86a01118fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 790335302}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1488384792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488384791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fce3dff2cb4844aa57bef292bf12a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
 --- !u!1 &1617450667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,7 +1581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95ac420ce1ec6f944b3ff0f9f814b93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterToWatch: {fileID: 0}
+  characterToWatch: {fileID: 1488384791}
   barVal: 3
 --- !u!1 &1800169029
 GameObject:
@@ -1765,7 +1858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011540618614, guid: 542475707c6b5644dac416d70a41eb31, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4000011540618614, guid: 542475707c6b5644dac416d70a41eb31, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1874,5 +1967,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95ac420ce1ec6f944b3ff0f9f814b93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterToWatch: {fileID: 0}
+  characterToWatch: {fileID: 1488384791}
   barVal: 2
