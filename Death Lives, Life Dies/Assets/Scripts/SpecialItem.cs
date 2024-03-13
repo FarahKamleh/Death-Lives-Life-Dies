@@ -66,6 +66,9 @@ public class SpecialItem : MonoBehaviour
     // move the wall
     IEnumerator MoveFunctionUp()
     {
+        // detatch trees from parent
+        wall.transform.parent = null;
+
         while (true)
         {
             // gradually make the wall rise at the speed of time
@@ -74,6 +77,7 @@ public class SpecialItem : MonoBehaviour
             // if the wall reached the desired height, exit
             if (wall.transform.position == new Vector3(wall.transform.position.x, 1, wall.transform.position.z))
             {
+                // exit
                 yield break;
             }
 
