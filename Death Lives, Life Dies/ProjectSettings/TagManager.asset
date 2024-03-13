@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ScytheTarget
   - Scythe
+  - WallItem
   layers:
   - Default
   - TransparentFX
