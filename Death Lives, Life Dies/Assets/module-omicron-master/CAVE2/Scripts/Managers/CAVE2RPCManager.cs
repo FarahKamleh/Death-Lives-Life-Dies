@@ -944,7 +944,7 @@ public class CAVE2RPCManager : MonoBehaviour {
     Hashtable clientMessageDelegates = new Hashtable();
 
     [SerializeField]
-    string serverIP = null;
+    string serverIP = 10.0.0.175;
 
     [SerializeField]
     bool autoUseHeadNodeAsServerIP = true;

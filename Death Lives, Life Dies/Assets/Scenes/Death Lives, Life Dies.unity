@@ -1279,6 +1279,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterToWatch: {fileID: 1488384791}
   barVal: 0
+--- !u!114 &666622327 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114000010224385144, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+    type: 3}
+  m_PrefabInstance: {fileID: 1148636120}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8378b35f2e0ea7f4e9391fc15782c4c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &790335302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1693,6 +1705,21 @@ PrefabInstance:
     - target: {fileID: 1000013763121972, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014176574518, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: headID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2906454405002939822, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: usePredefined
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2906454405002939822, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: sourceID
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 418049647, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: stereoMode
@@ -3256,11 +3283,31 @@ PrefabInstance:
       propertyPath: head2MocapID
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010706522814, guid: 542475707c6b5644dac416d70a41eb31,
+        type: 3}
+      propertyPath: sendTrackingData
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235559894020893472, guid: 542475707c6b5644dac416d70a41eb31,
+        type: 3}
+      propertyPath: useCAVE2GeneralizedPerspectiveProjection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235559894020893472, guid: 542475707c6b5644dac416d70a41eb31,
+        type: 3}
+      propertyPath: headTracker
+      value: 
+      objectReference: {fileID: 2133012962}
     - target: {fileID: 2717644653638251209, guid: 542475707c6b5644dac416d70a41eb31,
         type: 3}
       propertyPath: displayMode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2717644653638251209, guid: 542475707c6b5644dac416d70a41eb31,
+        type: 3}
+      propertyPath: cameraController
+      value: 
+      objectReference: {fileID: 666622327}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 542475707c6b5644dac416d70a41eb31, type: 3}
 --- !u!1 &2031872849
@@ -3396,6 +3443,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterToWatch: {fileID: 1488384791}
   barVal: 2
+--- !u!4 &2133012962 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1114540783782268610, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+    type: 3}
+  m_PrefabInstance: {fileID: 1148636120}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2138772315 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1f83a7ebc91b79a428ba6dc53f1587e9,
