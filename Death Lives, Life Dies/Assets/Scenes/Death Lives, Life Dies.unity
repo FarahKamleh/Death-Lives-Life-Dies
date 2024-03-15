@@ -631,12 +631,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: dab31928e9f30334eaaf4b155a519145,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.87969005
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dab31928e9f30334eaaf4b155a519145,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.4755475
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dab31928e9f30334eaaf4b155a519145,
         type: 3}
@@ -656,7 +656,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: dab31928e9f30334eaaf4b155a519145,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 123.21
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dab31928e9f30334eaaf4b155a519145,
         type: 3}
@@ -1665,6 +1665,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: headID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: wandID
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114000013146937712, guid: c1621f4dd1e8c2748a5a423aa7736d55,
         type: 3}
@@ -3209,6 +3219,16 @@ PrefabInstance:
     - target: {fileID: 4000011540618614, guid: 542475707c6b5644dac416d70a41eb31, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012506513464, guid: 542475707c6b5644dac416d70a41eb31,
+        type: 3}
+      propertyPath: connectToServer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012506513464, guid: 542475707c6b5644dac416d70a41eb31,
+        type: 3}
+      propertyPath: serverIP
+      value: cave2tracker.evl.uic.edu
       objectReference: {fileID: 0}
     - target: {fileID: 114000010706522814, guid: 542475707c6b5644dac416d70a41eb31,
         type: 3}
