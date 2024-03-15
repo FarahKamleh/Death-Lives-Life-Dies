@@ -1,0 +1,9 @@
+When developing:
+
+Switch Display Mode in CAVE2-Manager -> CAVE2 Experimental Display Mode to Standard_get Real 3D from Experimental
+
+Uncheck Use CAVE2 Generalized in CAVE2-Manager -> CAVE2 Cluster Manager
+
+Uncheck Connect to Server in CAVE2-Manager -> Omicron Manager
+
+Uncheck Player 2 - Life and vice versa to develop.

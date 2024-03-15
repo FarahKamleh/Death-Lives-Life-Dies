@@ -1611,7 +1611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011680592226, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1660,27 +1660,27 @@ PrefabInstance:
     - target: {fileID: 224072241358244698, guid: c1621f4dd1e8c2748a5a423aa7736d55,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224072241358244698, guid: c1621f4dd1e8c2748a5a423aa7736d55,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224844441273533712, guid: c1621f4dd1e8c2748a5a423aa7736d55,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224844441273533712, guid: c1621f4dd1e8c2748a5a423aa7736d55,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224844441273533712, guid: c1621f4dd1e8c2748a5a423aa7736d55,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114000012058711088, guid: c1621f4dd1e8c2748a5a423aa7736d55,
         type: 3}
@@ -3271,7 +3271,7 @@ PrefabInstance:
     - target: {fileID: 114000012506513464, guid: 542475707c6b5644dac416d70a41eb31,
         type: 3}
       propertyPath: connectToServer
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000012506513464, guid: 542475707c6b5644dac416d70a41eb31,
         type: 3}
@@ -3291,7 +3291,7 @@ PrefabInstance:
     - target: {fileID: 1235559894020893472, guid: 542475707c6b5644dac416d70a41eb31,
         type: 3}
       propertyPath: useCAVE2GeneralizedPerspectiveProjection
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1235559894020893472, guid: 542475707c6b5644dac416d70a41eb31,
         type: 3}
@@ -3301,7 +3301,7 @@ PrefabInstance:
     - target: {fileID: 2717644653638251209, guid: 542475707c6b5644dac416d70a41eb31,
         type: 3}
       propertyPath: displayMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2717644653638251209, guid: 542475707c6b5644dac416d70a41eb31,
         type: 3}
