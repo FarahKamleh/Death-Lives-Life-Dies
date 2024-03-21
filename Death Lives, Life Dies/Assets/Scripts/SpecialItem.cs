@@ -38,6 +38,8 @@ public class SpecialItem : MonoBehaviour
                 // switch the sprites
                 emptySprite.enabled = true;
                 wallSprite.enabled = false;
+                
+                wall.GetComponent<TreeWallController>().activated = true;
 
                 // make wall rise until it reaches target height
                 StartCoroutine(MoveFunctionUp());
