@@ -11,6 +11,7 @@ public class TreeWallController : MonoBehaviour
     [SerializeField]
     public bool activated;
 
+    Vector3 disabledPosition = new Vector3(0, -7.5f, 0);
     Vector3 downPosition = new Vector3(0, -3.57f, 0);
     Vector3 upPosition = new Vector3(0, 1.0f, 0);
 
@@ -29,10 +30,21 @@ public class TreeWallController : MonoBehaviour
         downPosition.z = gameObject.transform.position.z;
         upPosition.x = gameObject.transform.position.x;
         upPosition.z = gameObject.transform.position.z;
+        disabledPosition.x = gameObject.transform.position.x;
+        disabledPosition.z = gameObject.transform.position.z;
 
         // Update health to current health
         health = Hitbox.GetComponent<CharacterInfo>().health;
         if (activated)
+        { 
             gameObject.transform.position = Vector3.Lerp(downPosition, upPosition, health / 5.0f);
+        }
+
+        if (health == 0)
+        {
+            gameObject.transform.position = disabledPosition;
+            activated = false;
+        }
+            
     }
 }
