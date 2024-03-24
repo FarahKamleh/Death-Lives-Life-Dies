@@ -36,6 +36,11 @@ public class CAVE2MocapUpdater : MonoBehaviour {
 
     public int sourceID = 1;
 
+    // EDIT: a new mode to update based on rotation and position
+    enum UpdateMode { None, PosRot, Pos, Rot};
+    [SerializeField]
+    UpdateMode updateMode = UpdateMode.PosRot;
+
     // Offset to tracking data (ex. object pivot vs tracking marker center)
     [SerializeField] Vector3 posOffset = Vector3.zero;
     [SerializeField] Vector3 rotOffset = Vector3.zero;
@@ -68,11 +73,19 @@ public class CAVE2MocapUpdater : MonoBehaviour {
 	void Update () {
         if (!useLateUpdate)
         {
-            transform.localPosition = CAVE2.GetMocapPosition(sourceID) + posOffset;
-            transform.localRotation = CAVE2.GetMocapRotation(sourceID);
-            transform.Rotate(rotOffset);
+            // EDIT: updating position
+            if (updateMode == UpdateMode.PosRot || updateMode == UpdateMode.Pos)
+            {
+                transform.localPosition = CAVE2.GetMocapPosition(sourceID) + posOffset;
+            }
 
-            if(trackUpdateLatency)
+            // EDIT: updating rotation
+            if (updateMode == UpdateMode.PosRot || updateMode == UpdateMode.Rot)
+            {
+                transform.localRotation = CAVE2.GetMocapRotation(sourceID);
+            }
+
+            if (trackUpdateLatency)
             {
                 updateEvents++;
                 updateTimer += Time.deltaTime;
@@ -97,9 +110,17 @@ public class CAVE2MocapUpdater : MonoBehaviour {
     {
         if (useLateUpdate)
         {
-            transform.localPosition = CAVE2.GetMocapPosition(sourceID) + posOffset;
-            transform.localRotation = CAVE2.GetMocapRotation(sourceID);
-            transform.Rotate(rotOffset);
+            // EDIT: updating position
+            if (updateMode == UpdateMode.PosRot || updateMode == UpdateMode.Pos)
+            {
+                transform.localPosition = CAVE2.GetMocapPosition(sourceID) + posOffset;
+            }
+
+            // EDIT: updating rotation
+            if (updateMode == UpdateMode.PosRot || updateMode == UpdateMode.Rot)
+            {
+                transform.localRotation = CAVE2.GetMocapRotation(sourceID);
+            }
         }
     }
 

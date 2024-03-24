@@ -54,6 +54,10 @@ public class CAVE2ClusterManager : MonoBehaviour
     [SerializeField]
     Transform headTracker = null;
 
+    // EDIT: another head tracker for player 2
+    [SerializeField]
+    Transform head2Tracker = null;
+
     int headTrackerID = -1;
 
     [SerializeField]
@@ -319,6 +323,33 @@ public class CAVE2ClusterManager : MonoBehaviour
         GeneralizedPerspectiveProjection[] cameras = Camera.main.GetComponentsInChildren<GeneralizedPerspectiveProjection>();
         foreach (GeneralizedPerspectiveProjection camera in cameras)
         {
+            // EDIT: check if the tracker in question is player 2 and the current camera is the left eye
+            if (head2Tracker && camera.gameObject.name == "leftEye")
+            {
+                // EDIT: fetch the camera of the second player which is only a single main camera
+                Camera[] head2Cams = head2Tracker.root.GetComponentsInChildren<Camera>();
+
+                // EDIT: loop through them to access player 2's main camera
+                foreach (Camera c in head2Cams)
+                {
+                    // EDIT: make the main camera the parent of the left eye; move the left eye of player 1 to the position of player 2's 
+                    camera.transform.parent = c.transform;
+
+                    // EDIT: ensure the rotation of the moved left eye matches the rotation of player 2
+                    camera.transform.Rotate(0, 180, 0);
+                }
+
+                // EDIT: make the left eye the view of player 2 using tracker
+                camera.SetHeadTracker(head2Tracker);
+            }
+
+            // EDIT: check if the tracker in question is player 1 and the current camera is the right eye
+            if (headTracker && camera.gameObject.name == "rightEye")
+            {
+                // EDIT: make the right eye the view of player 1 using tracker
+                camera.SetHeadTracker(headTracker);
+            }
+
             camera.SetHeadTracker(headTracker);
             camera.SetVirtualCamera(camera.GetComponent<Camera>());
             camera.SetApplyHeadOffset(false);
