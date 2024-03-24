@@ -485,6 +485,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &140139572 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1114540783782268610, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+    type: 3}
+  m_PrefabInstance: {fileID: 949623412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &247845344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2511,7 +2517,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 949623412}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1654956954
+--- !u!114 &1654956961
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3428,6 +3434,11 @@ PrefabInstance:
       propertyPath: headTracker
       value: 
       objectReference: {fileID: 2133012962}
+    - target: {fileID: 1235559894020893472, guid: 542475707c6b5644dac416d70a41eb31,
+        type: 3}
+      propertyPath: head2Tracker
+      value: 
+      objectReference: {fileID: 140139572}
     - target: {fileID: 2717644653638251209, guid: 542475707c6b5644dac416d70a41eb31,
         type: 3}
       propertyPath: displayMode

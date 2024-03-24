@@ -368,7 +368,7 @@ public class CAVE2ClusterManager : MonoBehaviour
             {
                 // Backwall has a different stereo configuration
                 stereoCamera.SetStereoResolution(new Vector2(5440, 768));
-                stereoCamera.InvertStereo(); // Invert backwall back to un-inverted
+                // stereoCamera.InvertStereo(); // Invert backwall back to un-inverted
 
                 // Stereoscopic camera is the "root" camera
                 if (!mainCameraRotated)
