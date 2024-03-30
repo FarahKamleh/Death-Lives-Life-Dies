@@ -44,6 +44,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7388388198797669901}
   - component: {fileID: 7388388198797669900}
+  - component: {fileID: 4496632064415926683}
   m_Layer: 0
   m_Name: Wall3D
   m_TagString: Untagged
@@ -80,6 +81,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6, y: 4, z: 1.5}
   m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &4496632064415926683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7388388198797669898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16e1c800576050a44a5a41d114da9f30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLife: 0
+  lifeWall: {fileID: 7388388198620116455}
+  deathWall: {fileID: 7388388199173139593}
 --- !u!1 &7388388199173139593
 GameObject:
   m_ObjectHideFlags: 0
