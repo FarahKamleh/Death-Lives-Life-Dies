@@ -5,7 +5,6 @@ using UnityEngine;
 public class SpecialItem : MonoBehaviour
 {
     // to switch between special items in the corner
-    public SpriteRenderer emptySprite;
     public SpriteRenderer wallSprite;
 
     // integer to track which special item is in holder
@@ -35,8 +34,7 @@ public class SpecialItem : MonoBehaviour
             // if special item is wall
             if (itemNum == 1)
             {
-                // switch the sprites
-                emptySprite.enabled = true;
+                // remove the wall sprite
                 wallSprite.enabled = false;
 
                 // make wall rise until it reaches target height
@@ -54,8 +52,7 @@ public class SpecialItem : MonoBehaviour
             // destroy the special item
             Destroy(collision.gameObject);
 
-            // swap the special item image to the tombstone
-            emptySprite.enabled = false;
+            // add the wall sprite
             wallSprite.enabled = true;
 
             // reassign the item number
