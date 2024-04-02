@@ -16,18 +16,33 @@ public class SpecialItem : MonoBehaviour
     // target position
     Vector3 targetPos = new Vector3(0, 1, 0);
 
+    // to know which controller/player
+    int wandID;
+
     // Start is called before the first frame update
     void Start()
     {
         // start with 0 because there is no special item
         itemNum = 0;
+
+        // check which player script is attached to
+        if (gameObject.tag == "DeathPlayer")
+        {
+            // set wand to 1
+            wandID = 1;
+        }
+        if (gameObject.tag == "LifePlayer")
+        {
+            // set wand to 2
+            wandID = 2;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         // if the user presses the space bar or L2
-        if ((Input.GetKeyDown("up")) || (CAVE2.GetButtonDown(CAVE2.Button.Button7)))
+        if ((Input.GetKeyDown("up")) || (CAVE2.GetButtonDown(CAVE2.Button.Button7, wandID)))
         {
             /* check which item is held */
 
