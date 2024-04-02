@@ -44,6 +44,9 @@ public class TreeWallController : MonoBehaviour
         {
             gameObject.transform.position = disabledPosition;
             activated = false;
+
+            // make the trees disappear to avoid collisions underneath the ground
+            gameObject.SetActive(false);
         }
             
     }

@@ -52,6 +52,9 @@ public class SpecialItem : MonoBehaviour
                 // remove the wall sprite
                 wallSprite.enabled = false;
 
+                // enable the wall
+                wall.SetActive(true);
+
                 // make wall rise until it reaches target height
                 StartCoroutine(MoveFunctionUp());
             }
