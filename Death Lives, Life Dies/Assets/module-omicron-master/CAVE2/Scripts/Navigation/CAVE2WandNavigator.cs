@@ -71,8 +71,6 @@ public class CAVE2WandNavigator : MonoBehaviour {
     public enum HorizonalMovementMode { Strafe, Turn }
     public HorizonalMovementMode horizontalMovementMode = HorizonalMovementMode.Strafe;
 
-    
-
     public enum ForwardRef { CAVEFront, Head, Wand }
     [SerializeField] ForwardRef forwardReference = ForwardRef.Wand;
 
