@@ -164,9 +164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9704fb42164bbf24287e8450932a79ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
+  agent: {fileID: 8838848593512063852}
   target: {fileID: 0}
-  deathTime: 0
+  deathTime: 15
 --- !u!1 &731909549714078645
 GameObject:
   m_ObjectHideFlags: 0

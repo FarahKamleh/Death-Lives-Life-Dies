@@ -2,31 +2,43 @@
 using System.Collections;
 using UnityEngine.AI;
 
-public class SkeletonBehavior : MonoBehaviour
+public class AssistantBehavior : MonoBehaviour
 {
 
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private Transform target;
 
+    public bool lifeAssistant;
+
     private Animator anim;
 
     public float deathTime;  // time assistant lasts once walking toward target
+    private bool followTarget;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        followTarget = false;
+    }
+
+
+    void Update()
+    {
+        if (followTarget) {
+            agent.SetDestination(target.position);
+        }
     }
 
 
 
     void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("DeathPlayer")) {
+        if ((lifeAssistant == false && other.gameObject.CompareTag("DeathPlayer")) || (lifeAssistant == true) && other.gameObject.CompareTag("LifePlayer")) {
             anim.SetBool("Walking", true);
-            agent.SetDestination(target.position);
+            followTarget = true;
             StartCoroutine(WalkUntilDeath());
         }
-        else if (other.gameObject.CompareTag("LifePlayer")) {
+        else if ((lifeAssistant == false && other.gameObject.CompareTag("LifePlayer")) || (lifeAssistant == true) && other.gameObject.CompareTag("DeathPlayer")) {
             // TODO: Farah, react to life here with tombstones!
         }
     }
