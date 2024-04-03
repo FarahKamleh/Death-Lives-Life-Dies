@@ -21,14 +21,14 @@ public class CheckMovement : MonoBehaviour
         {
             Debug.Log("entered here");
             // turn on running animation
-            animator.SetBool("isRunning", true);
+            animator.SetBool("IsRunning", true);
         }
         // if in place
         else if (CAVE2.Input.GetAxis(2, forwardAxis) == 0)
         {
             Debug.Log("now here");
             // turn off running
-            animator.SetBool("isRunning", false);
+            animator.SetBool("IsRunning", false);
         }
     }
 }
