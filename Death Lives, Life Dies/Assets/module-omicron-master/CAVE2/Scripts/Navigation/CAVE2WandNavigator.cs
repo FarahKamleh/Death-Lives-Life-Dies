@@ -48,7 +48,7 @@ public class CAVE2WandNavigator : MonoBehaviour {
     [Header("Movement Speed")]
     [SerializeField] bool walkUsesFlyGlobalSpeedScale = false;
     public float globalSpeedMod = 1.0f;
-    [SerializeField] float movementScale = 5;
+    public float movementScale = 5;
     [SerializeField] float flyMovementScale = 5;
     [SerializeField] float turnSpeed = 20;
 

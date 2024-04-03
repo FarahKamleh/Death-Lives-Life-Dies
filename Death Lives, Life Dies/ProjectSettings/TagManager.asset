@@ -11,6 +11,7 @@ TagManager:
   - BowTarget
   - DeathPlayer
   - LifePlayer
+  - RoughTerrain
   layers:
   - Default
   - TransparentFX
