@@ -37,6 +37,7 @@ public class BulletScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other);
         if (other.gameObject.tag == "BowTarget" && active == true)
         {
             if (other.gameObject.GetComponent<CharacterInfo>().health > 0)
