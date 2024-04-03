@@ -15682,6 +15682,7 @@ MonoBehaviour:
   otherTarget: {fileID: 1807042978}
   lifeAssistant: 1
   deathTime: 15
+  wall: {fileID: 2031872849}
 --- !u!195 &397131643
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22550,6 +22551,11 @@ PrefabInstance:
       propertyPath: otherTarget
       value: 
       objectReference: {fileID: 2103635976}
+    - target: {fileID: 8838848593512063843, guid: d0c384f704057c745beb4ea2744e0c83,
+        type: 3}
+      propertyPath: wall
+      value: 
+      objectReference: {fileID: 165482488}
     - target: {fileID: 8838848593512063853, guid: d0c384f704057c745beb4ea2744e0c83,
         type: 3}
       propertyPath: m_Enabled
