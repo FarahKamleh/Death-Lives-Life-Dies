@@ -14,19 +14,17 @@ public class CheckMovement : MonoBehaviour
     void Update()
     {
         // print the value
-        Debug.Log(CAVE2.Input.GetAxis(2, forwardAxis));
+        // Debug.Log(CAVE2.Input.GetAxis(2, forwardAxis));
 
         // if moving forward or backwards
         if (CAVE2.Input.GetAxis(2, forwardAxis) != 0)
         {
-            Debug.Log("entered here");
             // turn on running animation
             animator.SetBool("IsRunning", true);
         }
         // if in place
         else if (CAVE2.Input.GetAxis(2, forwardAxis) == 0)
         {
-            Debug.Log("now here");
             // turn off running
             animator.SetBool("IsRunning", false);
         }
