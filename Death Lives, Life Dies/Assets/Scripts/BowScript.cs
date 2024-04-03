@@ -22,7 +22,7 @@ public class BowScript : MonoBehaviour
     void Update()
     {
         // EDIT: make sure L1 is pressed from Player 2's wand
-        if ((Input.GetMouseButtonDown(0)) || (CAVE2.GetButtonDown(CAVE2.Button.Button5, 2)) && (active == false))
+        if (((Input.GetMouseButtonDown(0)) || (CAVE2.GetButtonDown(CAVE2.Button.Button5, 2))) && (active == false))
         {
             Debug.Log("Fired");
             active = true;
