@@ -7,6 +7,8 @@ public class AssistantBehavior : MonoBehaviour
 
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private Transform target;
+    [SerializeField] private Transform otherTarget;
+
 
     public bool lifeAssistant;
 
@@ -14,6 +16,7 @@ public class AssistantBehavior : MonoBehaviour
 
     public float deathTime;  // time assistant lasts once walking toward target
     private bool followTarget;
+    private bool followOther;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +31,10 @@ public class AssistantBehavior : MonoBehaviour
         if (followTarget) {
             agent.SetDestination(target.position);
         }
+        if (followOther)
+        {
+            agent.SetDestination(otherTarget.position);
+        }
     }
 
 
@@ -39,7 +46,8 @@ public class AssistantBehavior : MonoBehaviour
             StartCoroutine(WalkUntilDeath());
         }
         else if ((lifeAssistant == false && other.gameObject.CompareTag("LifePlayer")) || (lifeAssistant == true) && other.gameObject.CompareTag("DeathPlayer")) {
-            // TODO: Farah, react to life here with tombstones!
+            anim.SetBool("Walking", true);
+            followOther = true;
         }
     }
 
