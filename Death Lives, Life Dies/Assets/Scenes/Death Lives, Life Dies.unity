@@ -2416,6 +2416,36 @@ Transform:
   m_Father: {fileID: 2103635976}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &74246463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5466121678552427823, guid: 8a9a4755156944247a37ea86a01118fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 790335302}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &74246464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74246463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!1001 &75740524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5939,13 +5969,14 @@ GameObject:
   m_Component:
   - component: {fileID: 165482489}
   - component: {fileID: 165482490}
+  - component: {fileID: 165482491}
   m_Layer: 0
   m_Name: Tombstones Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &165482489
 Transform:
   m_ObjectHideFlags: 0
@@ -5980,6 +6011,30 @@ MonoBehaviour:
   Hitbox: {fileID: 330856791}
   health: 0
   activated: 0
+--- !u!114 &165482491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165482488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!1001 &166667175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6534,6 +6589,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 377.62418, y: 144.40001, z: 58.866493}
   m_Center: {x: -80.49281, y: 75.14951, z: -0.52791077}
+--- !u!114 &177475185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177475183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!1001 &177769626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14379,6 +14458,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 381.64188, y: 144.40001, z: 58.866493}
   m_Center: {x: -78.484055, y: 75.14951, z: -0.52791077}
+--- !u!114 &366009338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366009336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!1 &368027855
 GameObject:
   m_ObjectHideFlags: 0
@@ -15705,6 +15808,30 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &397131644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397131640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!1001 &402136808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20149,6 +20276,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.284097, y: 5.766556, z: 4.6806035}
   m_Center: {x: 0.040897097, y: 2.8833046, z: -0.052501738}
+--- !u!114 &516827484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516827482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!4 &529483204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7388388198797669901, guid: b3e865fd87aa61243b9ea91010472f15,
@@ -22204,6 +22355,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 374.1653, y: 144.40001, z: 58.866493}
   m_Center: {x: -74.74569, y: 75.14951, z: -0.52791214}
+--- !u!114 &578121101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578121099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!4 &583341598 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7388388198797669901, guid: b3e865fd87aa61243b9ea91010472f15,
@@ -32595,6 +32770,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 381.64188, y: 144.40001, z: 58.866493}
   m_Center: {x: -78.484055, y: 75.14951, z: -0.52791077}
+--- !u!114 &888655650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888655648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!1001 &893530527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34460,6 +34659,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.284097, y: 5.766556, z: 4.6806035}
   m_Center: {x: 0.040897097, y: 2.8833046, z: -0.052501738}
+--- !u!114 &952845790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952845788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!1001 &955048340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40679,6 +40902,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.284097, y: 5.766556, z: 4.6806035}
   m_Center: {x: 0.040897097, y: 2.8833046, z: -0.052501738}
+--- !u!114 &1111100490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111100488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!1001 &1118564762
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42365,6 +42612,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.284097, y: 5.766556, z: 4.6806035}
   m_Center: {x: 0.040897097, y: 2.8833046, z: -0.052501738}
+--- !u!114 &1164086406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164086404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!4 &1165009142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7388388198797669901, guid: b3e865fd87aa61243b9ea91010472f15,
@@ -46353,6 +46624,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.284097, y: 5.766556, z: 4.6806035}
   m_Center: {x: 0.040897097, y: 2.8833046, z: -0.052501738}
+--- !u!114 &1312249860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312249858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!1 &1312581848
 GameObject:
   m_ObjectHideFlags: 0
@@ -49235,6 +49530,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.284097, y: 5.766556, z: 4.6806035}
   m_Center: {x: 0.040897097, y: 2.8833046, z: -0.052501738}
+--- !u!114 &1364244646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364244644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!4 &1365013023 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7388388198797669901, guid: b3e865fd87aa61243b9ea91010472f15,
@@ -50913,6 +51232,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.284097, y: 5.766556, z: 4.6806035}
   m_Center: {x: 0.040897097, y: 2.8833046, z: -0.052501738}
+--- !u!114 &1419849373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419849371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!4 &1422202780 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7388388198797669901, guid: b3e865fd87aa61243b9ea91010472f15,
@@ -67801,6 +68144,7 @@ GameObject:
   - component: {fileID: 1899421114}
   - component: {fileID: 1899421119}
   - component: {fileID: 1899421118}
+  - component: {fileID: 1899421120}
   m_Layer: 0
   m_Name: Rough Terrain
   m_TagString: RoughTerrain
@@ -67922,6 +68266,30 @@ MonoBehaviour:
   deathPosition: {fileID: 1807042978}
   doSwitch: 0
   switchInterval: 0
+--- !u!114 &1899421120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899421113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!1001 &1903500415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71294,6 +71662,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1962725311}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1968810391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 686808706001183542, guid: d0c384f704057c745beb4ea2744e0c83,
+    type: 3}
+  m_PrefabInstance: {fileID: 589365728}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1968810392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968810391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!1001 &1969603075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73623,6 +74021,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2031872850}
   - component: {fileID: 2031872851}
+  - component: {fileID: 2031872852}
   m_Layer: 0
   m_Name: Tree Wall
   m_TagString: ScytheTarget
@@ -73668,6 +74067,30 @@ MonoBehaviour:
   Hitbox: {fileID: 312215891}
   health: 0
   activated: 0
+--- !u!114 &2031872852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031872849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!1001 &2034294735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78862,6 +79285,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.284097, y: 5.766556, z: 4.6806035}
   m_Center: {x: 0.040897097, y: 2.8833046, z: -0.052501738}
+--- !u!114 &2138772317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138772315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe53fd68588e4549bb39fd5a7155ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 2
+  updateInterval: 0.025
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  useLocal: 0
+  testSyncObject: {fileID: 0}
+  adaptiveDebugText: {fileID: 0}
+  adaptiveThreshold: 0.05
+  adaptiveDelay: 2
+  useAdvancedClusterSync: 0
+  advSyncDebugText: {fileID: 0}
 --- !u!4 &2145205303 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7388388198797669901, guid: b3e865fd87aa61243b9ea91010472f15,
