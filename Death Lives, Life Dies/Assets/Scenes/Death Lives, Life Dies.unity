@@ -26655,8 +26655,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672807624}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.174, z: 0}
-  m_LocalScale: {x: 1.2232006, y: 1.2232006, z: 1.2232006}
+  m_LocalPosition: {x: 0.0000000021278, y: 1.174, z: 0}
+  m_LocalScale: {x: 3.082343, y: 3.082343, z: 3.082343}
   m_Children: []
   m_Father: {fileID: 759596283}
   m_RootOrder: 1
@@ -26695,7 +26695,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672807624}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -80007,7 +80007,32 @@ PrefabInstance:
     - target: {fileID: 8013739832799187091, guid: dd4b63f7763b0014ab924d35774655d6,
         type: 3}
       propertyPath: m_Range
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750486664292554624, guid: dd4b63f7763b0014ab924d35774655d6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.070532836
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750486664292554624, guid: dd4b63f7763b0014ab924d35774655d6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.070532836
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750486664292554624, guid: dd4b63f7763b0014ab924d35774655d6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.070532836
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456917235762403420, guid: dd4b63f7763b0014ab924d35774655d6,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7188831437952819381, guid: dd4b63f7763b0014ab924d35774655d6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9cdbc9eeb11492841b802f885d136182, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd4b63f7763b0014ab924d35774655d6, type: 3}

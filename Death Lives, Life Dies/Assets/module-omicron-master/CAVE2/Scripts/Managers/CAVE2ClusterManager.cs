@@ -350,7 +350,8 @@ public class CAVE2ClusterManager : MonoBehaviour
                 camera.SetHeadTracker(headTracker);
             }
 
-            camera.SetHeadTracker(headTracker);
+            // EDIT: do not allow player 1's perspective to affect player 2
+            // camera.SetHeadTracker(headTracker);
             camera.SetVirtualCamera(camera.GetComponent<Camera>());
             camera.SetApplyHeadOffset(false);
 
