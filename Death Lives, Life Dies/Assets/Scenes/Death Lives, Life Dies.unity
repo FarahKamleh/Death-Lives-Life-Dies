@@ -34494,6 +34494,10 @@ PrefabInstance:
         of the CAVE2/Unity simulator (module-omicron), but also frequent consultation
         for CAVE2-related inquiries.
 
+
+        All of the sprite textures used throughout the project were created by Julian
+        Mackenzie.
+
 '
       objectReference: {fileID: 0}
     - target: {fileID: 114000011111918770, guid: c1621f4dd1e8c2748a5a423aa7736d55,
@@ -42180,7 +42184,9 @@ PrefabInstance:
         of the CAVE2/Unity simulator (module-omicron), but also frequent consultation
         for CAVE2-related inquiries.
 
-'
+
+        All of the sprite textures used throughout the project were created by Julian
+        Mackenzie.'
       objectReference: {fileID: 0}
     - target: {fileID: 114000011111918770, guid: c1621f4dd1e8c2748a5a423aa7736d55,
         type: 3}
