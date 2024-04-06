@@ -34463,6 +34463,83 @@ PrefabInstance:
       propertyPath: sourceID
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012607288206, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011952582294, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Use the analog stick to move in any direction. To activate a special
+        item, press the L2 button. If Player #1 (Death), swing your scythe using motion
+        tracking. If Player #2 (Life), use the L1 button to fire your bow.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010683909002, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: m_Text
+      value: 'A pursuit of innovation, while both players share all screens of the
+        CAVE2, they do not see the same image. In other words, they cannot see the
+        other player''s screen. This is achieved by taking advantage of the stereoscopic
+        effect, more specifically manipulating its simulated "left eye" and "right
+        eye".
+
+
+        Player #1 is given a right-eye-right-eye configuration (2D-R) and Player #2
+        is given a left-eye-left-eye configuration (2D-L). When using the regular
+        3D glasses, closing the left eye reveals Player #1''s screen and closing the
+        right eye reveals Player #2''s screen.
+
+
+        Special thank you to Dr. Arthur Nishimoto for not only the creation and maintenance
+        of the CAVE2/Unity simulator (module-omicron), but also frequent consultation
+        for CAVE2-related inquiries.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011111918770, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: m_Text
+      value: "Death Lives, Life Dies is a two-player \u2014 Player vs. Player \u2014
+        game developed for the CAVE2 Hybrid Reality Environment of objective categories
+        \"Capture\", \"Chase\", and \"Rescue\" intended for competitive VR-enthusiasts.\n\nAlthough
+        a taker-of-life, Death has never had a life of his own. Jealous, he has determined
+        that, if he cannot have life, then no one can. A newborn has just arrived
+        on the scene. Knowing it is not yet their time, Life must prevent Death's
+        killing spree by killing Death himself.\n\nPlayer #1, Death, must locate and
+        eliminate the newborn.\nPlayer #2, Life, must locate and eliminate Death.\n\nFor
+        the rules, players can only carry one special item at a time. Every special
+        item on the map is single-use and will noy respawn. In order to win, it will
+        take five hits to either eliminate the newborn or defeat Death. Lost health
+        cannot be returned."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011111918770, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011641407824, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: m_Text
+      value: 'CS 426 - Video Game Design
+
+        Spring 2024
+
+        University of Illinois Chicago'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010541511360, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: m_Text
+      value: Death Lives, Life Dies
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011468825520, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Farah Kamleh
+
+        Julian Mackenzie
+
+        Sebastian Ho'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
 --- !u!1001 &952596505
@@ -42071,6 +42148,78 @@ PrefabInstance:
     - target: {fileID: 1000013479211570, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012607288206, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011952582294, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Use the analog stick to move in any direction. To activate a special
+        item, press the L2 button. If Player #1 (Death), swing your scythe using motion
+        tracking. If Player #2 (Life), use the L1 button to fire your bow.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010683909002, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: m_Text
+      value: 'A pursuit of innovation, while both players share all screens of the
+        CAVE2, they do not see the same image. In other words, they cannot see the
+        other player''s screen. This is achieved by taking advantage of the stereoscopic
+        effect, more specifically manipulating its simulated "left eye" and "right
+        eye".
+
+
+        Player #1 is given a right-eye-right-eye configuration (2D-R) and Player #2
+        is given a left-eye-left-eye configuration (2D-L). When using the regular
+        3D glasses, closing the left eye reveals Player #1''s screen and closing the
+        right eye reveals Player #2''s screen.
+
+
+        Special thank you to Dr. Arthur Nishimoto for not only the creation and maintenance
+        of the CAVE2/Unity simulator (module-omicron), but also frequent consultation
+        for CAVE2-related inquiries.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011111918770, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: m_Text
+      value: "Death Lives, Life Dies is a two-player \u2014 Player vs. Player \u2014
+        game developed for the CAVE2 Hybrid Reality Environment of objective categories
+        \"Capture\", \"Chase\", and \"Rescue\" intended for competitive VR-enthusiasts.\n\nAlthough
+        a taker-of-life, Death has never had a life of his own. Jealous, he has determined
+        that, if he cannot have life, then no one can. A newborn has just arrived
+        on the scene. Knowing it is not yet their time, Life must prevent Death's
+        killing spree by killing Death himself.\n\nPlayer #1, Death, must locate and
+        eliminate the newborn.\nPlayer #2, Life, must locate and eliminate Death.\n\nFor
+        the rules, players can only carry one special item at a time. Every special
+        item on the map is single-use and will noy respawn. In order to win, it will
+        take five hits to either eliminate the newborn or defeat Death. Lost health
+        cannot be returned."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011641407824, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: m_Text
+      value: 'CS 426 - Video Game Design
+
+        Spring 2024
+
+        University of Illinois Chicago'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010541511360, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: m_Text
+      value: Death Lives, Life Dies
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011468825520, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Farah Kamleh
+
+        Julian Mackenzie
+
+        Sebastian Ho'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
@@ -65136,7 +65285,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805050147}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
