@@ -22,6 +22,8 @@ public class SpecialItem : MonoBehaviour
     // audio source for wall rising
     public AudioSource wallSound;
 
+    public AudioSource itemPickupSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +72,8 @@ public class SpecialItem : MonoBehaviour
         // if the collision is with wall special item
         if (collision.gameObject.tag == "WallItem")
         {
+            // Play pickup sound
+            itemPickupSound.Play();
             // destroy the special item
             Destroy(collision.gameObject);
 
