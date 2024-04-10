@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5466121677733718461}
   - component: {fileID: 5466121677733718460}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Newborn Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -236,8 +236,6 @@ MonoBehaviour:
   health: 5
   agent: {fileID: 6772378680868244897}
   altar: {fileID: 0}
-  lifeTransform: {fileID: 0}
-  deathTransform: {fileID: 0}
   target: {fileID: 0}
 --- !u!195 &6772378680868244897
 NavMeshAgent:

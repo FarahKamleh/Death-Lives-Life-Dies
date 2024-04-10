@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-    [SerializeField]
-    GameObject bowObject;
+    [SerializeField] GameObject bowObject;
 
     Vector3 initialPos;
     bool active;
+
+    [SerializeField] AudioSource graveHitSound;
+    [SerializeField] AudioSource deathHitSound;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +43,10 @@ public class BulletScript : MonoBehaviour
         if (other.gameObject.tag == "BowTarget" && active == true)
         {
             active = false;
+
+            if (other.gameObject.name == "Death Hitbox") deathHitSound.Play();
+            if (other.gameObject.name == "Hitbox Tombstones") graveHitSound.Play();
+
             if (other.gameObject.GetComponent<CharacterInfo>().health > 0)
             {
                 other.gameObject.GetComponent<CharacterInfo>().health -= 1;
