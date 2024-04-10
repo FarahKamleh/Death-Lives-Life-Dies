@@ -18,6 +18,14 @@ public class AssistantBehavior : MonoBehaviour
     private bool followTarget;
     private bool followOther;
 
+
+    public GameObject bubbleIdle;
+    public GameObject bubbleChase;
+    public GameObject bubbleNewborn;
+    public GameObject bubbleDeath;
+
+    
+
     // wall to be raised
     public GameObject wall;
 
@@ -26,6 +34,7 @@ public class AssistantBehavior : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         followTarget = false;
+        bubbleIdle.SetActive(true);
     }
 
 
@@ -54,10 +63,22 @@ public class AssistantBehavior : MonoBehaviour
         if ((lifeAssistant == false && other.gameObject.CompareTag("DeathPlayer")) || (lifeAssistant == true) && other.gameObject.CompareTag("LifePlayer")) {
             anim.SetBool("Walking", true);
             followTarget = true;
+
+            bubbleIdle.SetActive(false);  // change speech bubble depending on player's target
+            if (lifeAssistant == false) {
+                bubbleNewborn.SetActive(true);
+            } else {
+                bubbleDeath.SetActive(true);
+            }
+            
             StartCoroutine(WalkUntilDeath());
         }
         else if ((lifeAssistant == false && other.gameObject.CompareTag("LifePlayer")) || (lifeAssistant == true) && other.gameObject.CompareTag("DeathPlayer")) {
             anim.SetBool("Walking", true);
+
+            bubbleIdle.SetActive(false);
+            bubbleChase.SetActive(true);
+
             followOther = true;
         }
     }
