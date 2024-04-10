@@ -35361,7 +35361,7 @@ PrefabInstance:
 
 
         All of the sprite textures used throughout the project were created by Julian
-        Mackenzie.
+        Mackenzie and Sebastian Ho.
 
 '
       objectReference: {fileID: 0}
@@ -35377,7 +35377,7 @@ PrefabInstance:
         killing spree by killing Death himself.\n\nPlayer #1, Death, must locate and
         eliminate the newborn.\nPlayer #2, Life, must locate and eliminate Death.\n\nFor
         the rules, players can only carry one special item at a time. Every special
-        item on the map is single-use and will noy respawn. In order to win, it will
+        item on the map is single-use and will not respawn. In order to win, it will
         take five hits to either eliminate the newborn or defeat Death. Lost health
         cannot be returned."
       objectReference: {fileID: 0}
@@ -43324,7 +43324,7 @@ PrefabInstance:
 
 
         All of the sprite textures used throughout the project were created by Julian
-        Mackenzie.'
+        Mackenzie and Sebastian Ho.'
       objectReference: {fileID: 0}
     - target: {fileID: 114000011111918770, guid: c1621f4dd1e8c2748a5a423aa7736d55,
         type: 3}
@@ -43338,7 +43338,7 @@ PrefabInstance:
         killing spree by killing Death himself.\n\nPlayer #1, Death, must locate and
         eliminate the newborn.\nPlayer #2, Life, must locate and eliminate Death.\n\nFor
         the rules, players can only carry one special item at a time. Every special
-        item on the map is single-use and will noy respawn. In order to win, it will
+        item on the map is single-use and will not respawn. In order to win, it will
         take five hits to either eliminate the newborn or defeat Death. Lost health
         cannot be returned."
       objectReference: {fileID: 0}
