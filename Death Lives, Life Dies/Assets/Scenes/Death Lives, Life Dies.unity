@@ -6092,6 +6092,7 @@ MonoBehaviour:
   Hitbox: {fileID: 330856791}
   health: 0
   activated: 0
+  isTree: 0
 --- !u!114 &165482491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23505,7 +23506,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0f7eda4efb602a34aa0058edaba2900c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -75252,6 +75253,7 @@ MonoBehaviour:
   Hitbox: {fileID: 312215891}
   health: 0
   activated: 0
+  isTree: 0
 --- !u!114 &2031872852
 MonoBehaviour:
   m_ObjectHideFlags: 0
