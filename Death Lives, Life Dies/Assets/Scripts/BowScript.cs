@@ -12,6 +12,9 @@ public class BowScript : MonoBehaviour
     Rigidbody rb;
     bool active;
 
+    // audio source for shooting
+    public AudioSource shootSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,9 @@ public class BowScript : MonoBehaviour
         // EDIT: make sure L1 is pressed from Player 2's wand
         if (((Input.GetMouseButtonDown(0)) || (CAVE2.GetButtonDown(CAVE2.Button.Button5, 2))) && (active == false))
         {
+            // play the shooting audio
+            shootSound.Play();
+
             Debug.Log("Fired");
             active = true;
             bulletObject.GetComponent<BulletScript>().setActive(true);
