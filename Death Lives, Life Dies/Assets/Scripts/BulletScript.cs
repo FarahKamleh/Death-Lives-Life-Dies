@@ -40,6 +40,7 @@ public class BulletScript : MonoBehaviour
         Debug.Log(other);
         if (other.gameObject.tag == "BowTarget" && active == true)
         {
+            active = false;
             if (other.gameObject.GetComponent<CharacterInfo>().health > 0)
             {
                 other.gameObject.GetComponent<CharacterInfo>().health -= 1;
