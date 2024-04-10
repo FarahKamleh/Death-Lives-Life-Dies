@@ -29,6 +29,9 @@ public class AssistantBehavior : MonoBehaviour
     // wall to be raised
     public GameObject wall;
 
+    // audio source of wall
+    public AudioSource wallSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -96,9 +99,12 @@ public class AssistantBehavior : MonoBehaviour
         float totalTime = 3;
         float elapsedTime = 0;
 
+        // play wall sound
+        wallSound.Play();
+
         while (true)
         {
-            // gradually make the wall rise at the speed of time
+            // gradually make the wall rise at the speed of time and
             elapsedTime += Time.deltaTime;
             wall.transform.position = Vector3.Lerp(wall.transform.position, new Vector3(wall.transform.position.x, 1, wall.transform.position.z), elapsedTime / totalTime);
 

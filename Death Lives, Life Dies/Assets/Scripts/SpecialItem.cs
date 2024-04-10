@@ -19,6 +19,9 @@ public class SpecialItem : MonoBehaviour
     // to know which controller/player
     int wandID;
 
+    // audio source for wall rising
+    public AudioSource wallSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -85,6 +88,9 @@ public class SpecialItem : MonoBehaviour
         wall.transform.parent = null;
         float totalTime = 3;
         float elapsedTime = 0;
+
+        // play rising sound
+        wallSound.Play();
 
         while (true)
         {
