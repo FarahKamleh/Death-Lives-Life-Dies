@@ -13,23 +13,47 @@ public class TargetDistance : MonoBehaviour
     // tranform of life
     public Transform life;
 
+    // use bools to ensure played once
+    bool closeNewborn = false;
+    bool closeLife = false;
+
     // Update is called once per frame
     void Update()
     {
-        // if the distance between Death and newborn is less than or equal to 10
-        if (Vector3.Distance(transform.position, newborn.position) <= 10)
+        // if the distance between Death and newborn is less than 10 and 
+        if (Vector3.Distance(transform.position, newborn.position) < 10)
         {
-            // play violin
-            violin.Play();
+            if (closeNewborn == false)
+            {
+                // play violin
+                violin.Play();
+
+                // set to true
+                closeNewborn = true;
+            }
+        }
+        else
+        {
+            closeNewborn = false;
         }
 
-        // Debug.Log(Vector3.Distance(transform.position, life.position));
+        Debug.Log(Vector3.Distance(transform.position, life.position));
 
-        // if the distance between Death and Life is less than or equal to 10
-        if (Vector3.Distance(transform.position, life.position) <= 10)
+        // if the distance between Death and Life is less than 10
+        if (Vector3.Distance(transform.position, life.position) < 10)
         {
-            // play violin
-            violin.Play();
+            if (closeLife == false)
+            {
+                // play violin
+                violin.Play();
+
+                // set to true
+                closeLife = true;
+            }
+        }
+        else
+        {
+            closeLife = false;
         }
     }
 }
