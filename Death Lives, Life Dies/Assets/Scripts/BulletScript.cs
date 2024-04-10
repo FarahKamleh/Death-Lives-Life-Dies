@@ -42,7 +42,8 @@ public class BulletScript : MonoBehaviour
         Debug.Log(other);
         if (other.gameObject.tag == "BowTarget" && active == true)
         {
-            active = false;
+            // FIXME: temporary omission of bug fix
+            // active = false;
 
             if (other.gameObject.name == "Death Hitbox") deathHitSound.Play();
             if (other.gameObject.name == "Hitbox Tombstones") graveHitSound.Play();
