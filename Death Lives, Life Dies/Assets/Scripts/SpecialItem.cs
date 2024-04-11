@@ -62,6 +62,9 @@ public class SpecialItem : MonoBehaviour
 
                 // make wall rise until it reaches target height
                 StartCoroutine(MoveFunctionUp());
+
+                // reset item number
+                itemNum = 0;
             }
         }
     }
