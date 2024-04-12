@@ -10,13 +10,32 @@ public class TrackedYAxis : MonoBehaviour
     // empty game object to be turned
     public GameObject emptyHead;
 
+    // store previous head rotation
+    Vector3 prevRotation;
+
+    // store head tracked position always
+    Vector3 headRotation;
+
+    private void Start()
+    {
+        // store the initial rotation of the player's head
+        prevRotation = CAVE2.GetHeadRotation(headID).eulerAngles;
+    }
+
     // Update is called once per frame
     void Update()
     {
         // fetch rotation of head tracking
-        Vector3 headRotation = CAVE2.GetHeadRotation(headID).eulerAngles;
+        headRotation = CAVE2.GetHeadRotation(headID).eulerAngles;
 
-        // apply y rotation to empty game object
-        emptyHead.transform.localEulerAngles = new Vector3(0, headRotation.y, 0);
+        // if the y rotation has been changed more than 1
+        if ((headRotation.y > (prevRotation.y + 1)) || (headRotation.y < (prevRotation.y - 1)))
+        {
+            // apply y rotation to empty game object
+            emptyHead.transform.localEulerAngles = new Vector3(0, headRotation.y, 0);
+
+            // update the previous y head position
+            prevRotation = headRotation;
+        }
     }
 }
