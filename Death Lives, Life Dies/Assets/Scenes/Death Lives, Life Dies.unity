@@ -28616,6 +28616,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 12.290965
       objectReference: {fileID: 0}
+    - target: {fileID: -8313929050120128151, guid: c324a9137925905468c03af328473e32,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c324a9137925905468c03af328473e32, type: 3}
 --- !u!4 &732578793 stripped
@@ -49216,6 +49221,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3e865fd87aa61243b9ea91010472f15, type: 3}
+--- !u!1 &1345133647 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 9ff338ee1aebc5b42b54e2de1444a07b,
+    type: 3}
+  m_PrefabInstance: {fileID: 513335624}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1345133648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345133647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b23500479e1bf43bcc7b68859f10a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathBody: {fileID: 672807624}
+  lifeBody: {fileID: 0}
+  scythe: {fileID: 992833954}
+  bow: {fileID: 0}
 --- !u!4 &1346284827 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013404205558, guid: c1621f4dd1e8c2748a5a423aa7736d55,
