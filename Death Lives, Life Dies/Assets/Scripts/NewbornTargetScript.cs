@@ -125,7 +125,8 @@ public class NewbornTargetScript : MonoBehaviour
         newDirection *= randDist;
 
         Vector3 newPosition = newbornTransform.position + newDirection;
-        if (newPosition.x > 66 || newPosition.x < -66 || newPosition.z < -66 || newPosition.z > 66)
+        // This should be the boundary of the map... If the map changes, might need to parameterize these
+        if (newPosition.x > 60 || newPosition.x < -60 || newPosition.z < -60 || newPosition.z > 60)
         {
             //targetRotation = Quaternion.AngleAxis(Random.Range(-180.0f, 180.0f), Vector3.up);
             //newDirection = ((targetRotation * direction) * (dotProduct / mag)).normalized;
