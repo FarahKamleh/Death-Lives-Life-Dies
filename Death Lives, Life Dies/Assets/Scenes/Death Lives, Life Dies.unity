@@ -23378,6 +23378,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8313929050120128151, guid: c324a9137925905468c03af328473e32,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a28fe8dfdb95f3c4fbbf1d338700adbc, type: 2}
+    - target: {fileID: -8313929050120128151, guid: c324a9137925905468c03af328473e32,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: c9cbc9f99340e6a479c676b8935cdfa1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c324a9137925905468c03af328473e32, type: 3}
 --- !u!4 &732578793 stripped
@@ -68339,6 +68349,11 @@ PrefabInstance:
       propertyPath: wallSound
       value: 
       objectReference: {fileID: 312215895}
+    - target: {fileID: 3034691692012615712, guid: 473499caff517c447b77675c086ccbf6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cfbce1f8f05c4ae4785956aa01c5820a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 473499caff517c447b77675c086ccbf6, type: 3}
 --- !u!1001 &7388388197559464977
