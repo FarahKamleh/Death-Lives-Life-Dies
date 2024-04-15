@@ -8,7 +8,8 @@ public class AssistantBehavior : MonoBehaviour
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private Transform target;
     [SerializeField] private Transform otherTarget;
-
+    [SerializeField] private AudioSource goodSound;
+    [SerializeField] private AudioSource badSound;
 
     public bool lifeAssistant;
 
@@ -63,6 +64,7 @@ public class AssistantBehavior : MonoBehaviour
 
 
     void OnTriggerEnter(Collider other) {
+        // If the assistant is the nearby player's assistant, the assistant chases the target
         if ((lifeAssistant == false && other.gameObject.CompareTag("DeathPlayer")) || (lifeAssistant == true) && other.gameObject.CompareTag("LifePlayer")) {
             anim.SetBool("Walking", true);
             followTarget = true;
@@ -73,9 +75,10 @@ public class AssistantBehavior : MonoBehaviour
             } else {
                 bubbleDeath.SetActive(true);
             }
-            
+            goodSound.Play();
             StartCoroutine(WalkUntilDeath());
         }
+        // Otherwise, chase the person to came nearby 
         else if ((lifeAssistant == false && other.gameObject.CompareTag("LifePlayer")) || (lifeAssistant == true) && other.gameObject.CompareTag("DeathPlayer")) {
             anim.SetBool("Walking", true);
 
@@ -83,6 +86,7 @@ public class AssistantBehavior : MonoBehaviour
             bubbleChase.SetActive(true);
 
             followOther = true;
+            badSound.Play();
         }
     }
 
