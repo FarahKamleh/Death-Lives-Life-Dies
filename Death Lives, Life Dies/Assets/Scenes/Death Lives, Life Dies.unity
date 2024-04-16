@@ -19316,6 +19316,11 @@ PrefabInstance:
       propertyPath: badSound
       value: 
       objectReference: {fileID: 1968810393}
+    - target: {fileID: 8838848593512063843, guid: d0c384f704057c745beb4ea2744e0c83,
+        type: 3}
+      propertyPath: p1Camera
+      value: 
+      objectReference: {fileID: 1479944822}
     - target: {fileID: 8838848593512063853, guid: d0c384f704057c745beb4ea2744e0c83,
         type: 3}
       propertyPath: m_Enabled
@@ -45691,6 +45696,12 @@ Transform:
   m_Father: {fileID: 380092006}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1479944822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013479211570, guid: c1621f4dd1e8c2748a5a423aa7736d55,
+    type: 3}
+  m_PrefabInstance: {fileID: 1148636120}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1482629460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68937,6 +68948,11 @@ PrefabInstance:
       propertyPath: badSound
       value: 
       objectReference: {fileID: 5958489326177839268}
+    - target: {fileID: 5958489326422775768, guid: 473499caff517c447b77675c086ccbf6,
+        type: 3}
+      propertyPath: p1Camera
+      value: 
+      objectReference: {fileID: 1479944822}
     - target: {fileID: 3034691692012615712, guid: 473499caff517c447b77675c086ccbf6,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

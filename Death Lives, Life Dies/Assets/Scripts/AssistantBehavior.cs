@@ -25,6 +25,8 @@ public class AssistantBehavior : MonoBehaviour
     public GameObject bubbleNewborn;
     public GameObject bubbleDeath;
 
+
+    public GameObject p1Camera;
     
 
     // wall to be raised
@@ -59,6 +61,12 @@ public class AssistantBehavior : MonoBehaviour
                 StartCoroutine(MoveFunctionUp());
             }
         }
+
+        bubbleIdle.transform.forward = p1Camera.transform.forward;
+        bubbleChase.transform.forward = p1Camera.transform.forward;
+        bubbleNewborn.transform.forward = p1Camera.transform.forward;
+        bubbleDeath.transform.forward = p1Camera.transform.forward;
+
     }
 
 
