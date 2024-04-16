@@ -54,7 +54,7 @@ public class AssistantBehavior : MonoBehaviour
             agent.SetDestination(otherTarget.position);
 
             // use x position to raise wall and remove assistant
-            if (gameObject.transform.position.x == otherTarget.position.x)
+            if (Vector3.Distance(gameObject.transform.position, otherTarget.position) <= 4f)
             {
                 // raise wall of opposing player and make assistant disappear
                 wall.SetActive(true);
