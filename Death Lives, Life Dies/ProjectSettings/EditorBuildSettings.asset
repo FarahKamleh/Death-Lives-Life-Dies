@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Death Lives, Life Dies.unity
+    guid: b731c0dc08a74e54d9685ee8ef3803c1
+  - enabled: 1
+    path: Assets/Scenes/Win Scene Death.unity
+    guid: 36c59ede1f0e77744a4e487184a759f7
+  - enabled: 1
+    path: Assets/Scenes/Win Scene Life.unity
+    guid: f7b0c5dcda8edff40b1a7c1c6ce86856
   m_configObjects: {}
