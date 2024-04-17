@@ -25,6 +25,8 @@ public class AssistantBehavior : MonoBehaviour
     public GameObject bubbleNewborn;
     public GameObject bubbleDeath;
 
+
+    public GameObject p1Camera;
     
 
     // wall to be raised
@@ -52,13 +54,19 @@ public class AssistantBehavior : MonoBehaviour
             agent.SetDestination(otherTarget.position);
 
             // use x position to raise wall and remove assistant
-            if (gameObject.transform.position.x == otherTarget.position.x)
+            if (Vector3.Distance(gameObject.transform.position, otherTarget.position) <= 4f)
             {
                 // raise wall of opposing player and make assistant disappear
                 wall.SetActive(true);
                 StartCoroutine(MoveFunctionUp());
             }
         }
+
+        bubbleIdle.transform.forward = p1Camera.transform.forward;
+        bubbleChase.transform.forward = p1Camera.transform.forward;
+        bubbleNewborn.transform.forward = p1Camera.transform.forward;
+        bubbleDeath.transform.forward = p1Camera.transform.forward;
+
     }
 
 
