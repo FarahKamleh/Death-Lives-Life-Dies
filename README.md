@@ -147,3 +147,73 @@ Each of these new elements follows intentional design elements of the game, both
      </ul>
     </li>
 </ul>
+
+## Assignment 7
+### UI and Sound Design Updates
+<ul>
+    <li>
+        Farah:
+        <ul>
+            <li>
+                Add the layering for Life’s view and Death’s view
+                <ul>
+                    <li>
+                        Layers out player models
+                    </li>
+                    <li>
+                        Health Bar of the other player
+                    </li>
+                    <li>
+                        Different special items
+                    </li>
+                </ul>
+            </li>
+            <li>
+            Colliders of Death and scythe no longer hit each other
+            </li>
+            <li>
+                Positional sound fixed
+            </li>
+            <li>
+                UI tracks head position
+            </li>
+            <li>
+                Toon shader
+            </li>
+        </ul>
+    </li>
+    <li>
+        Julian:
+        <ul>
+            <li>
+                Reduced the size of the maze
+            </li>
+            <li>
+                Asssistant has speech bubbles, trap from assistant triggers in a further range
+            </li>
+            <li>
+                Win screens
+            </li>
+            <li>
+                Special item ring shader
+            </li>
+        </ul>
+    </li>
+        <li>
+        Sebastian:
+        <ul>
+            <li>
+                Weapon UI for scythe
+            </li>
+            <li>
+                Replaced placeholder landmarks
+            </li>
+            <li>
+                Sound triggers for positive/negative effects for assistants
+            </li>
+            <li>
+                Newborn/Bullet seed shaders
+            </li>
+        </ul>
+    </li>
+</ul>
