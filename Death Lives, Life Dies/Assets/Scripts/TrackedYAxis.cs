@@ -28,8 +28,8 @@ public class TrackedYAxis : MonoBehaviour
         // fetch rotation of head tracking
         headRotation = CAVE2.GetHeadRotation(headID).eulerAngles;
 
-        // if the y rotation has been changed more than 1
-        if ((headRotation.y > (prevRotation.y + 1)) || (headRotation.y < (prevRotation.y - 1)))
+        // if the y rotation has been changed more than 2
+        if ((headRotation.y > (prevRotation.y + 2)) || (headRotation.y < (prevRotation.y - 2)))
         {
             // apply y rotation to empty game object
             emptyHead.transform.localEulerAngles = new Vector3(0, headRotation.y, 0);
