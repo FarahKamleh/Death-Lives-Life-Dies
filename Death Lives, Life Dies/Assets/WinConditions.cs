@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class WinConditions : MonoBehaviour
 {
 
-    public GameObject Death;
+    public GameObject DeathHealth;
     public GameObject Newborn;
+    public GameObject Death;
+    public GameObject Life;
 
     // Start is called before the first frame update
     void Start()
@@ -18,11 +20,9 @@ public class WinConditions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Death.GetComponent<CharacterInfo>().health == 0) {
-            SceneManager.LoadScene("Win Scene Life");
-        }
-        if (Newborn.GetComponent<CharacterInfo>().health == 0) {
-            SceneManager.LoadScene("Win Scene Death");
+        if (DeathHealth.GetComponent<CharacterInfo>().health == 0 || Newborn.GetComponent<CharacterInfo>().health == 0) {
+            Death.transform.position = new Vector3(0f,-29f,10f);
+            Life.transform.position = new Vector3(0f,-29f,-10f);
         }
         
     }
