@@ -1,6 +1,9 @@
 # Death-Lives-Life-Dies
  A two-player game for the CAVE2 in which both players share all 88 screens but do not see the same image. This is achieved by taking advantage of the stereoscopic shader and giving Player #1, Death, a 2D-R configuration and Player #2, Life, a 2D-L configuration.
 
+## Demo
+[Link to the demo!](https://youtu.be/JgVC-ecK1Zg?si=u7F4_-WucacY2yOU)
+
 ## Assignment 6
 ### Additions and their design philosophy
 <ul>
